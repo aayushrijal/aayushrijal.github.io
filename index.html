@@ -1,101 +1,729 @@
-
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta charec set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Page Title -->
+        <title>Themefisher.Free Bootstrap3 based HTML5 Templates</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="Blue One Page Creative HTML5 Template">
+        <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+        <meta name="author" content="Muhammad Morshed">
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Google Font -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Aayush Rijal</title>
-    <meta name="author" content="Aayush Rijal" />
-    <meta name="description" content="" />
-    <meta name="keywords"  content="" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta property="og:title" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="http:aayushrijal.github.io">
-    <meta name="Resource-type" content="Document" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.css" />
-    <style>
-        #examplesList,caption,th{text-align:left}blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}#download a,#fullPage-nav li a,#menu li a,a{text-decoration:none}#download,#download:hover{text-shadow:0 -1px 0 rgba(0,0,0,.25)}.section,.wrap{position:relative}table{border-spacing:0}abbr,acronym,fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-weight:400;font-style:normal}strong{font-weight:700}ol,ul{list-style:none}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%;color:#444}body,h2{color:#333}q:after,q:before{content:''}body{font-family:arial,helvetica;color:rgba(0,0,0,.5);background-color:#1BBC9B}body,html{overflow:hidden}#fullpage,.section,body,html{height:100%}.wrap{margin-left:auto;margin-right:auto;width:960px}h1{font-size:6em}h2,p{font-size:2em}h2{color:rgba(0,0,0,.5)}.section{text-align:center}#github-stars-button,.twitter-share-button{position:fixed!important;z-index:99;right:149px}#menu li{display:inline-block;margin:10px;color:#000;background:#fff;background:rgba(255,255,255,.5);-webkit-border-radius:10px;border-radius:10px}#menu li.active{background:#666;background:rgba(0,0,0,.5);color:#fff}#menu li a,#menu li.active a:hover{color:#000}#donations a:hover,#download,#menu li.active a{color:#fff}#menu li:hover{background:rgba(255,255,255,.8)}#menu li a,#menu li.active a{padding:9px 18px;display:block}#examplesList ul,#menu{padding:0}#examplesList ul li a:hover,#infoMenu{color:#f2f2f2}#menu{position:fixed;top:0;left:0;height:40px;z-index:70;width:100%;margin:0}#usedBy{background-image:url(imgs/used-by-fullpage.png?v=2);margin:50px auto 0;display:block;height:127px;width:402px}#section0 img,#section1 img{margin:20px 0 0}#section2 img{margin:20px 0 0 52px}#section3 img{bottom:0;position:absolute;margin-left:-420px}.intro p{width:50%;margin:0 auto;font-size:1.5em}.twitter-share-button{top:9px}#github-stars-button{top:35px;width:60px;height:20px}#fullPage-nav{position:absolute;z-index:100;margin-top:-32px;top:50%;opacity:1}#fullPage-nav li{display:block;width:14px;height:13px;margin:7px}#fullPage-nav li a{display:block;position:relative;z-index:1;width:100%;height:100%;cursor:pointer}#fullPage-nav li .active span{background:#333}#fullPage-nav span{top:2px;left:2px;width:8px;height:8px;border:1px solid #000;background:rgba(0,0,0,0);-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;position:absolute;z-index:1}#download{margin:10px 0 0;padding:15px 10px;background-color:#49afcd;background-image:-moz-linear-gradient(top,#5bc0de,#2f96b4);background-image:-ms-linear-gradient(top,#5bc0de,#2f96b4);background-image:-webkit-gradient(linear,0 0,0 100%,from(#5bc0de),to(#2f96b4));background-image:-webkit-linear-gradient(top,#5bc0de,#2f96b4);background-image:-o-linear-gradient(top,#5bc0de,#2f96b4);background-image:linear-gradient(top,#5bc0de,#2f96b4);background-repeat:repeat-x;border-color:#2f96b4 #2f96b4 #1f6377;border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;vertical-align:middle;cursor:pointer;display:inline-block;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05)}#download a{color:#fff}#download:hover{background-color:#2F96B4;background-position:0 -15px;-webkit-transition:background-position .1s linear;-moz-transition:background-position .1s linear;-ms-transition:background-position .1s linear;-o-transition:background-position .1s linear;transition:background-position .1s linear}#infoMenu{height:20px;position:fixed;z-index:70;bottom:0;width:100%;text-align:right;font-size:.9em;padding:8px 0}#infoMenu li a{display:block;margin:0 22px 0 0;color:#333}#infoMenu li a:hover{text-decoration:underline}#infoMenu li{display:inline-block;position:relative}#examplesList{display:none;background:#282828;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;padding:20px;float:left;position:absolute;bottom:29px;right:0;width:822px}#examplesList ul li{display:block;margin:5px 0}#examplesList ul li a{color:#BDBDBD;margin:0}#examplesList .column{float:left;margin:0 20px 0 0}#examplesList h3{color:#f2f2f2;font-size:1.2em;margin:0 0 15px;border-bottom:1px solid rgba(0,0,0,.4);-webkit-box-shadow:0 1px 0 rgba(255,255,255,.1);-moz-box-shadow:0 1px 0 rgba(255,255,255,.1);box-shadow:0 1px 0 rgba(255,255,255,.1);padding:0 0 5px}#donations a{color:#333;color:rgba(0,0,0,.5);font-size:80%}#supportedBy{position:absolute;left:30px;bottom:30px;z-index:101}#supportedBy a img{display:block;margin:0;border:0}#supportedBy div{margin:0 0 4px;display:block;font-size:13px;text-align:left}#section0 #logo{max-width:282px}@media screen and (max-height:770px){#section0 #logo{max-width:250px!important;height:auto!important}#section0 #usedBy{padding:10px 0 0;height:60px;width:398px;margin-top:40px;background-size:cover}#section3 img{bottom:-67px}}@media screen and (max-height:680px){#section0 #usedBy{margin-top:15px;height:41px;width:308px;background-size:cover}#section0 #logo{max-width:200px!important;height:auto!important}#section3 img{bottom:-100px}}@media screen and (max-height:580px){#section0 #logo{max-width:150px!important;height:auto!important}h1{font-size:4.5em}h2{font-size:1.3em}#donations a{font-size:57%}#section3 img{bottom:-180px}.intro p{font-size:1.1em}}@media screen and (max-height:480px){#usedBy{display:none}}@media all and (max-width:900px){#usedBy{padding:0}}@media all and (max-width:890px){#twitter-widget-0{left:20px;top:63px}#github-stars-button{left:20px;top:98px}#section3 img{margin:0 auto;left:0;max-width:600px;height:auto!important;right:0}#section1 #slidersImg{max-width:462px;height:auto!important}#menu li{margin:5px}#menu li a,#menu li.active a{padding:9px 12px}}@media all and (max-width:650px){#menu{z-index:9999}#menu li{margin:3px}#menu li a,#menu li.active a{padding:9px 12px}#section3 img{margin:0 auto;left:0;max-width:450px;height:auto!important;right:0}#section2 img{margin:20px 0 0}.intro p{font-size:1.1em}#usedBy{width:310px!important;height:46px!important;background-size:cover!important;background-repeat:no-repeat}}@media all and (max-width:580px){#menu li a,#menu li.active a{padding:8px 11px;font-size:13px}#supportedBy{display:none}#section1 #slidersImg,#section2 #easyToUse{max-width:350px;height:auto!important}.intro p{width:75%}h1{font-size:2.7em}h2{font-size:1.1em}#infoMenu{text-align:center}#infoMenu ul{display:inline-block;padding:0}#infoMenu li a{margin:0 10px 0 0}}@media all and (max-width:480px){#section3 img{margin:0 auto;left:0;max-width:300px;height:auto!important;right:0}#github-stars-button,#twitter-widget-0{display:none}}@media all and (max-width:450px){#menu{display:none}.intro p{font-size:1em}#infoMenu{bottom:21px}}@media screen and (max-width:890px) and (max-height:680px){#section3 img{bottom:-50px}}@media screen and (max-width:650px) and (max-height:680px){#section3 img{bottom:0}}@media screen and (max-width:580px) and (max-height:580px){#section3 img{bottom:-50px}}@media screen and (max-width:500px) and (max-height:500px){#section3 img{bottom:0}}
-    </style>
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- animate -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+		<!-- media-queries -->
+        <link rel="stylesheet" href="css/media-queries.css">
 
-</head>
-<body>
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
 
-    <ul id="menu">
-        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-        <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-        <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
-        <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
-    </ul>
+    </head>
+	
+    <body id="body">
+	
+		<!-- preloader -->
+		<div id="preloader">
+			<img src="img/preloader.gif" alt="Preloader">
+		</div>
+		<!-- end preloader -->
 
-<div id="fullpage">
+        <!-- 
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+                    <a class="navbar-brand" href="#body">
+						<h1 id="logo">
+							<img src="img/logo.png" alt="Brandi">
+						</h1>
+					</a>
+					<!-- /logo -->
+                </div>
 
-    <div class="section active" id="section0">
-        <h1>Aayush Rijal</h1>
-        <h2>Software Engineer</h2>
-
-    </div>
-    <div class="section" id="section1">
-        <div class="slide active">
-            <div class="intro">
-                <h1>Aayush Rijal</h1>
-                <p>Engineer</p>
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="#body">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#works">Work</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="http://google.com">Contact</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
             </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		
+		
+        <!--
+        Home Slider
+        ==================================== -->
+		
+		<section id="slider">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			
+				<!-- Indicators bullet -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				</ol>
+				<!-- End Indicators bullet -->				
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					
+					<!-- single slide -->
+					<div class="item active" style="background-image: url(img/banner.jpg);">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Brandi</span>!</h2>
+							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/creative</span> one page template.</h3>
+							<p data-wow-duration="1000ms" class="wow slideInRight animated">We are a team of professionals</p>
+							
+							<ul class="social-links text-center">
+								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+					<!-- single slide -->
+					<div class="item" style="background-image: url(img/banner.jpg);">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Team</span>!</h2>
+							<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">/creative</span> one page template.</h3>
+							<p data-wow-duration="500ms" class="wow slideInRight animated">We are a team of professionals</p>
+							
+							<ul class="social-links text-center">
+								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+				</div>
+				<!-- End Wrapper for slides -->
+				
+			</div>
+		</section>
+		
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+		
+        <!--
+        Features
+        ==================================== -->
+		
+		<section id="features" class="features">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+						<h2>Features</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
 
-        </div>
-        <div class="slide">
-            <div class="intro">
-                <h1>Aayush Rijal</h1>
-                <p>Designer</p>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="intro">
-                <h1>Aayush Rijal</h1>
-                <p>Developer</p>
-            </div>
-        </div>
-    </div>
-    <div class="section" id="section2">
-        <div class="intro">
-            <h1>More</h1>
-            <p>even more</p>
-        </div>
-    </div>
-    <div class="section" id="section3">
-        <div class="intro">
-            <h1>Contact</h1>
-            <p>
-                +977-9841161988
-            </p>
-        </div>
-    </div>
-</div>
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-github fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Branding</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-pencil fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Development</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-bullhorn fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Consulting</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+						
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        End Features
+        ==================================== -->
+		
+		
+        <!--
+        Our Works
+        ==================================== -->
+		
+		<section id="works" class="works clearfix">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center">
+						<h2>Works</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+					</div>
+					
+					<div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+						<ul class="text-center">
+							<li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
+							<li><a href="javascript:;" data-filter=".branding" class="filter">Branding</a></li>
+							<li><a href="javascript:;" data-filter=".web" class="filter">web</a></li>
+							<li><a href="javascript:;" data-filter=".logo-design" class="filter">logo design</a></li>
+							<li><a href="javascript:;" data-filter=".photography" class="filter">photography</a></li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="project-wrapper">
+			
+				<figure class="mix work-item branding">
+					<img src="img/works/item-1.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-1.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Labore et dolore magnam</h4>
+						<p>Photography</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item web">
+					<img src="img/works/item-2.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-2.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Labore et dolore magnam</h4>
+						<p>Photography</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item logo-design">
+					<img src="img/works/item-3.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-3.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Labore et dolore magnam</h4>
+						<p>Photography</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item photography">
+					<img src="img/works/item-4.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-4.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Labore et dolore magnam</h4>
+						<p>Photography</p>
+					</figcaption>
+				</figure>
+			
+				<figure class="mix work-item branding">
+					<img src="img/works/item-5.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-5.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Labore et dolore magnam</h4>
+						<p>Photography</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item web">
+					<img src="img/works/item-6.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-6.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Labore et dolore magnam</h4>
+						<p>Photography</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item logo-design">
+					<img src="img/works/item-7.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-7.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Labore et dolore magnam</h4>
+						<p>Photography</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item photography">
+					<img src="img/works/item-8.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-8.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Labore et dolore magnam</h4>
+						<p>Photography</p>
+					</figcaption>
+				</figure>
+				
+			</div>
+		
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#fullpage').fullpage({
-            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-            menu: '#menu',
-            css3: true,
-            scrollingSpeed: 1000
-        });
+		</section>
+		
+        <!--
+        End Our Works
+        ==================================== -->
+		
+        <!--
+        Meet Our Team
+        ==================================== -->		
+		
+		<section id="team" class="team">
+			<div class="container">
+				<div class="row">
+		
+					<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+						<h2>Meet Our Team</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+					</div>
 
-        $('#showExamples').click(function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            $('#examplesList').toggle();
-        });
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="member-thumb">
+							<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>voluptatem quia voluptas </h5>
+								<p>sit aspernatur aut odit aut fugit,</p>
+								<ul class="social-links text-center">
+									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>John Filmr Doe</h4>
+						<span>Managing Director</span>
+					</figure>
+					<!-- end single member -->
+					
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="member-thumb">
+							<img src="img/team/member-2.png" alt="Team Member" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>voluptatem quia voluptas </h5>
+								<p>sit aspernatur aut odit aut fugit,</p>
+								<ul class="social-links text-center">
+									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Martin Matrone</h4>
+						<span>Lead Developer</span>
+					</figure>
+					<!-- end single member -->
+					
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="member-thumb">
+							<img src="img/team/member-3.png" alt="Team Member" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>voluptatem quia voluptas </h5>
+								<p>sit aspernatur aut odit aut fugit,</p>
+								<ul class="social-links text-center">
+									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Steve Flaulkin</h4>
+						<span>Sr. UI Designer</span>
+					</figure>
+					<!-- end single member -->
+					
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="member-thumb">
+							<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>voluptatem quia voluptas </h5>
+								<p>sit aspernatur aut odit aut fugit,</p>
+								<ul class="social-links text-center">
+									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>John Filmr Doe</h4>
+						<span>Managing Director</span>
+					</figure>
+					<!-- end single member -->
+					
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        End Meet Our Team
+        ==================================== -->
+		
+		<!--
+        Some fun facts
+        ==================================== -->		
+		
+		<section id="facts" class="facts">
+			<div class="parallax-overlay">
+				<div class="container">
+					<div class="row number-counters">
+						
+						<div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
+							<h2>Some Fun Facts</h2>
+							<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+						</div>
+						
+						<!-- first count item -->
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+							<div class="counters-item">
+								<i class="fa fa-clock-o fa-3x"></i>
+								<strong data-to="3200">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p>Hours of Work</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+							<div class="counters-item">
+								<i class="fa fa-users fa-3x"></i>
+								<strong data-to="120">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p>Satisfied Clients</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+							<div class="counters-item">
+								<i class="fa fa-rocket fa-3x"></i>
+								<strong data-to="360">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p> Projects Delivered </p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+							<div class="counters-item">
+								<i class="fa fa-trophy fa-3x"></i>
+								<strong data-to="6454">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p>Awards Won</p>
+							</div>
+						</div>
+						<!-- end first count item -->
+				
+					</div>
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        End Some fun facts
+        ==================================== -->
+		
+		
+		<!--
+        Contact Us
+        ==================================== -->		
+		
+		<section id="contact" class="contact">
+			<div class="container">
+				<div class="row mb50">
+				
+					<div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
+						<h2>Let’s Discuss</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+					</div>
+					
+					<!-- contact address -->
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
+						<div class="contact-address">
+							<h3>Cras at ultrices erat, sed vulputate!</h3>
+							<p>2345 Setwant natrer, 1234,</p>
+							<p>Washington. United States.</p>
+							<p>(401) 1234 567</p>
+						</div>
+					</div>
+					<!-- end contact address -->
+					
+					<!-- contact form -->
+					<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="contact-form">
+							<h3>Say hello!</h3>
+							<form action="#" id="contact-form">
+								<div class="input-group name-email">
+									<div class="input-field">
+										<input type="text" name="name" id="name" placeholder="Name" class="form-control">
+									</div>
+									<div class="input-field">
+										<input type="email" name="email" id="email" placeholder="Email" class="form-control">
+									</div>
+								</div>
+								<div class="input-group">
+									<textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+								</div>
+								<div class="input-group">
+									<input type="submit" id="form-submit" class="pull-right" value="Send message">
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- end contact form -->
+					
+					<!-- footer social links -->
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<ul class="footer-social">
+							<li><a href="https://www.behance.net/Themefisher"><i class="fa fa-behance fa-2x"></i></a></li>
+							<li><a href="https://www.twitter.com/Themefisher"><i class="fa fa-twitter fa-2x"></i></a></li>
+							<li><a href="https://dribbble.com/themefisher"><i class="fa fa-dribbble fa-2x"></i></a></li>
+							<li><a href="https://www.facebook.com/Themefisher"><i class="fa fa-facebook fa-2x"></i></a></li>
+						</ul>
+					</div>
+					<!-- end footer social links -->
+					
+				</div>
+			</div>
+			
+			<!-- Google map -->
+			<div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div>
+			<!-- End Google map -->
+			
+		</section>
+		
+        <!--
+        End Contact Us
+        ==================================== -->
+		
+		
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="footer-single">
+							<img src="img/footer-logo.png" alt="">
+							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="footer-single">
+							<h6>Subscribe </h6>
+							<form action="#" class="subscribe">
+								<input type="text" name="subscribe" id="subscribe">
+								<input type="submit" value="&#8594;" id="subs">
+							</form>
+							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="footer-single">
+							<h6>Explore</h6>
+							<ul>
+								<li><a href="#">Inside Us</a></li>
+								<li><a href="#">Flickr</a></li>
+								<li><a href="#">Google</a></li>
+								<li><a href="#">Forum</a></li>
+							</ul>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="footer-single">
+							<h6>Support</h6>
+							<ul>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Market Blog</a></li>
+								<li><a href="#">Help Center</a></li>
+								<li><a href="#">Pressroom</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="copyright text-center">
+							Copyright © 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved. Designed & developed by <a href="http://themefisher.com/">Themefisher</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
 
-        $('html').click(function(){
-            $('#examplesList').hide();
-        });
-    });
-</script>
-<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-</body>
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- jquery.mixitup.min -->
+        <script src="js/jquery.mixitup.min.js"></script>
+		<!-- jquery.parallax -->
+        <script src="js/jquery.parallax-1.1.3.js"></script>
+		<!-- jquery.countTo -->
+        <script src="js/jquery-countTo.js"></script>
+		<!-- jquery.appear -->
+        <script src="js/jquery.appear.js"></script>
+		<!-- Contact form validation -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+		<!-- Google Map -->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+		<!-- jquery easing -->
+        <script src="js/wow.min.js"></script>
+		<script>
+			var wow = new WOW ({
+				boxClass:     'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset:       120,          // distance to the element when triggering the animation (default is 0)
+				mobile:       false,       // trigger animations on mobile devices (default is true)
+				live:         true        // act on asynchronously loaded content (default is true)
+			  }
+			);
+			wow.init();
+		</script> 
+		<!-- Custom Functions -->
+        <script src="js/custom.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				/* ========================================================================= */
+				/*	Contact Form
+				/* ========================================================================= */
+				
+				$('#contact-form').validate({
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						message: {
+							required: true
+						}
+					},
+					messages: {
+						name: {
+							required: "come on, you have a name don't you?",
+							minlength: "your name must consist of at least 2 characters"
+						},
+						email: {
+							required: "no email, no message"
+						},
+						message: {
+							required: "um...yea, you have to write something to send this form.",
+							minlength: "thats all? really?"
+						}
+					},
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							type:"POST",
+							data: $(form).serialize(),
+							url:"process.php",
+							success: function() {
+								$('#contact-form :input').attr('disabled', 'disabled');
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$(this).find(':input').attr('disabled', 'disabled');
+									$(this).find('label').css('cursor','default');
+									$('#success').fadeIn();
+								});
+							},
+							error: function() {
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$('#error').fadeIn();
+								});
+							}
+						});
+					}
+				});
+			});
+		</script>
+    </body>
 </html>
